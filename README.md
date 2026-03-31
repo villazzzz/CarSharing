@@ -1,16 +1,19 @@
-# React + Vite
+# CarSharing - Paso Ecuador UPF 2026
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, lightweight carsharing web application designed to coordinate transportation for the **Paso Ecuador UPF 2026** event. The app features a unique "Airport/Station" retro-aesthetic with real-time data synchronization.
 
-Currently, two official plugins are available:
+## Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Interactive Route Map:** Visualizes origin and destination (Masia El Pinatar) using Leaflet, including automated geocoding for departure points.
+- **Split-Flap Display:** Animated real-time counters for offers, seats, and passengers inspired by vintage airport departure boards.
+- **Real-time Updates:** Powered by Supabase, the interface updates instantly when new rides are added or joined without needing to refresh.
+- **Passwordless Management:** Users can manage and delete their own offers/bookings via a secure token system stored in `LocalStorage`. No account registration required.
+- **Responsive Design:** Fully optimized for mobile and desktop using Tailwind CSS.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project
+- **Frontend:** [React 19](https://react.dev/) + [Vite](https://vitejs.dev/).
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/).
+- **Backend/Database:** [Supabase](https://supabase.com/) (PostgreSQL + Realtime).
+- **Maps:** [Leaflet](https://leafletjs.com/) & [React-Leaflet](https://react-leaflet.js.org/).
+- **Animations:** [Framer Motion](https://www.framer.com/motion/).
