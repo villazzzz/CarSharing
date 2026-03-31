@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-airport-dark text-white font-sans antialiased min-h-screen selection:bg-airport-orange/30;
+  }
+}
+
+/* Custom styles for Leaflet map to invert colors for dark mode, or make it blend */
+.leaflet-container {
+  background: #1a1a1a !important;
+  font-family: "JetBrains Mono", monospace !important;
+}
+
+/* Animated Route Path */
+.route-path-animated {
+  stroke-dasharray: 10, 10;
+  animation: move-dash 1s linear infinite;
+}
+
+@keyframes move-dash {
+  100% {
+    stroke-dashoffset: -20;
+  }
+}
+
+/* Split-flap styling */
+.split-flap-card {
+  @apply relative inline-flex items-center justify-center font-mono font-bold leading-none bg-black text-airport-orange;
+  perspective: 400px;
+}
+
+.split-flap-divider {
+  @apply absolute left-0 right-0 h-[1px] top-1/2 -translate-y-1/2 bg-black/60 shadow-[0_1px_0_rgba(255,255,255,0.1)];
+  z-index: 10;
+}
