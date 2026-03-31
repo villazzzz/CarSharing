@@ -68,7 +68,7 @@ function App() {
               </div>
             ) : rides.length === 0 ? (
               <div className="bg-airport-board border border-white/5 rounded-lg p-12 text-center text-gray-400">
-                <div className="text-4xl mb-3 opacity-20">✈</div>
+                <div className="text-4xl mb-3 opacity-20">🚗</div>
                 <p className="text-lg">No hi ha cap oferta de cotxe encara.</p>
                 <p>Sigues el primer en oferir places!</p>
               </div>
